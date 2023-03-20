@@ -1,4 +1,3 @@
-# สร้าง Class สำหรับแมว (Cat)
 class Cat:
     def __init__(self, name, color, age):
         self.name = name
@@ -13,35 +12,36 @@ class Cat:
         
     def eat(self, food):
         print(f"{self.name} is eating {food}. Yum yum!")
-        
-# สร้าง Class สำหรับรถยนต์ (Car)
-class Car:
-    def __init__(self, brand, model, year):
-        self.brand = brand
-        self.model = model
-        self.year = year
-        
-    def start_engine(self):
-        print("Starting the engine...")
-        
-    def stop_engine(self):
-        print("Stopping the engine...")
-        
-    def drive(self):
-        print(f"Driving the {self.brand} {self.model} ({self.year})")
-        
-# สร้าง Object จาก Class Cat
-my_cat = Cat("Whiskers", "white", 3)
 
-# เรียกใช้ Method ของ Object Cat
-my_cat.meow()  # output: "Meow!"
-my_cat.sleep()  # output: "Whiskers is sleeping."
-my_cat.eat("fish")  # output: "Whiskers is eating fish. Yum yum!"
+class Shop:
+    def __init__(self, name, color, age, disease, species, cost):
+        self.cat = Cat(name, color, age)
+        self.disease = disease
+        self.species = species
+        self.cost = cost
+        
+    def start(self):
+        print("...Welcome...")
+        
+    def stop(self):
+        print("...Thank you...")
+        
+    def info(self):
+        print(f"Information about your cat {self.cat.name} ({self.cat.color}, {self.cat.age}):")
+        print(f"  - Disease: {self.disease}")
+        print(f"  - Species: {self.species}")
+        print(f"  - Cost: {self.cost} baht")
+        
+# Cat
+my_cat = Cat("Singto", "white", 3)
 
-# สร้าง Object จาก Class Car
-my_car = Car("Toyota", "Camry", 2020)
+my_cat.meow() 
+my_cat.sleep()
+my_cat.eat("fish")
 
-# เรียกใช้ Method ของ Object Car
-my_car.start_engine()  # output: "Starting the engine..."
-my_car.drive()  # output: "Driving the Toyota Camry (2020)"
-my_car.stop_engine()  # output: "Stopping the engine..."
+# Shop
+my_shop = Shop("Singto", "white", 3, "Fever", "Persian", 5000)
+
+my_shop.start()
+my_shop.info() 
+my_shop.stop()
