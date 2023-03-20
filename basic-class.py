@@ -1,14 +1,3 @@
-# Function อยู่นอก class ไม่ผูกติดกับobject 
-# Method อยู่ใน class ผูกติดกับ Method เสมอ
-# Instance วิธีการเรียกใช้ Attribute and Method
-# Constructor คือ Method ตัวหนึ่งที่อยู่ภายใน class ทำหน้าที่ จะทำงานอัตโนมัติทันทีเมื่อมีการสร้าง Instance // ใน 1 class ควร มี 1 Constructor
-# Constructor มี 2 ประเภท 1.แบบเปล่า ไม่มีการส่งค่า 2.แบบมีพารามิเตอร์ มีการส่งค่าขึ้นไป
-# self เป็น keyword ไว้อ้างถึงตัวแปรที่อยู่ใน class เพื่อให้แตกต่างกับชื่อที่มองเห็น Ex. self.subject = subject
-# การสืบทอด class คือ การที่ class ลูก (sub class) สามารถรับตัวแปร และ Method จาก class แม่ได้
-# sub class  1.สามารถ ดึงค่าตัวแปร และ Method จาก class แม่  2.สามารถเพิ่ม Attribute และ Method ในตัวมันเองได้ด้วย 
-# ชื่อ class ควรเป็น N // ชื่อ Attribute ควรเป็น adv บอกลักษณะ ขึ้นต้นด้วยตัวเล็ก ส่วนคำที่ 2 ขึ้นจต้นด้วยตัวใหญ่ // ชื่อ Method ควรเป็น V  การกระทำ
-# f ดึงค่ามาไว้ใน text ที่ต้องการ
-
 class school:
     # Attribute
     schoolName = 'Acu'
