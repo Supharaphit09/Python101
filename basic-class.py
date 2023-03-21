@@ -42,27 +42,27 @@ class student(school):
 
 print('================================')
 student01 = student('สมชาย สายลม', 1 , 75, 'Math')
-student01.hello
+student01.hello()
 print(f'ชื่อโรงเรียน{student01.schoolName}')
 print(f'ชื่อนักเรียน{student01.fullname}')
 print(f'ระดับชั้น{student01.level}')
 print(f'คะแนนสอบ{student01.scores}')
-student01.checkGrade
+student01.checkGrade()
 
 print('================================')
 student02 = student('สมศักดิ์', 1 , 5, 'Math')
-student02.hello
+student02.hello()
 print(f'ชื่อโรงเรียน{student02.schoolName}')
 print(f'ชื่อนักเรียน{student02.fullname}')
 print(f'ระดับชั้น{student02.level}')
 print(f'คะแนนสอบ{student02.scores}')
-student02.checkGrade
+student02.checkGrade()
 
 print('================================')
 student03 = student('สมหญิง ปิ้ว', 2 , 99, 'Math')
-student03.hello
+student03.hello()
 print(f'ชื่อโรงเรียน{student03.schoolName}')
 print(f'ชื่อนักเรียน{student03.fullname}')
 print(f'ระดับชั้น{student03.level}')
 print(f'คะแนนสอบ{student03.scores}')
-student03.checkGrade
+student03.checkGrade()
