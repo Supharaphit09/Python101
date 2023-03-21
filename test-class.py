@@ -13,9 +13,9 @@ class Cat:
     def eat(self, food):
         print(f"{self.name} is eating {food}. Yum yum!")
 
-class Shop:
+class Shop(Cat):
     def __init__(self, name, color, age, disease, species, cost):
-        self.cat = Cat(name, color, age)
+        super().__init__(name, color, age)
         self.disease = disease
         self.species = species
         self.cost = cost
@@ -27,21 +27,18 @@ class Shop:
         print("...Thank you...")
         
     def info(self):
-        print(f"Information about your cat {self.cat.name} ({self.cat.color}, {self.cat.age}):")
+        print(f"Information about your cat {self.name} ({self.color}, {self.age}):")
         print(f"  - Disease: {self.disease}")
         print(f"  - Species: {self.species}")
         print(f"  - Cost: {self.cost} baht")
-        
-# Cat
-my_cat = Cat("Singto", "white", 3)
 
-my_cat.meow() 
-my_cat.sleep()
-my_cat.eat("fish")
 
-# Shop
-my_shop = Shop("Singto", "white", 3, "Fever", "Persian", 5000)
+my_shop = Shop("Singto", "White", 5, "flu", "Persian", 5000)
 
 my_shop.start()
-my_shop.info() 
+my_shop.info()
+print('Update about your cat')
+my_shop.meow()
+my_shop.eat("fish")
+my_shop.sleep()
 my_shop.stop()
