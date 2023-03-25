@@ -17,6 +17,7 @@ GUI.configure(bg='#F7F6CF')
 L1 = Label(GUI,text='WELCOME',font=('Arial Black',30),fg='Black',bg='#F5F7CF',width=10,height=1)
 L1.place(x=120,y=80)
 
+# Button
 name_label = Label(GUI, text="NAME:",font=('Arial Black',8),fg='Black',bg='#F5F7CF')
 name_label.place(x=150, y=300)
 
@@ -65,7 +66,7 @@ class TaxCalculator:
 income_entry = Entry(GUI)
 income_entry.place(x=220, y=600)
 
-# สร้างฟังก์ชันเพื่อบันทึกข้อมูลเมื่อกดปุ่ม Submit
+# Submit
 def submit():
     name = name_entry.get()
     id = id_entry.get()
