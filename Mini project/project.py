@@ -1,7 +1,6 @@
 from tkinter import *
 from PIL import Image, ImageTk
 import csv
-from tkinter import messagebox
 
 GUI = Tk()
 GUI.title("Tax.calculate")
